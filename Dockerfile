@@ -7,7 +7,7 @@ FROM registry.alauda.cn/library/java:7
 ##ENTRYPOINT ["/bin/bash"]
 #CMD ["tailf", "/var/log/lastlog"]
 
-RUN rm -fr /Helloworld.class
-COPY ./Helloworld.class /
+RUN rm -fr /HelloWorld.class
+COPY ./HelloWorld.class /
 WORKDIR /
 CMD ["java","Helloworld"]

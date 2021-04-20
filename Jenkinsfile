@@ -4,7 +4,7 @@ node {
       }
       stage('Build') {
           echo 'Building....'
-          sh 'javac Helloworld.java'
+          sh 'javac HelloWorld.java'
       }
       stage('Deploy') {
           echo 'Deploying....'

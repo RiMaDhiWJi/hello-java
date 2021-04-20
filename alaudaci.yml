@@ -3,6 +3,6 @@ pre_ci_boot:
   image: registry.alauda.cn/library/java
   tag: "7"
 ci:
-  - javac Helloworld.java
-  - cp ./Helloworld.class $ALAUDACI_DEST_DIR
+  - javac HelloWorld.java
+  - cp ./HelloWorld.class $ALAUDACI_DEST_DIR
   - cp Dockerfile $ALAUDACI_DEST_DIR
