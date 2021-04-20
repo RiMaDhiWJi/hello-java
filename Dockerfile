@@ -1,4 +1,4 @@
-FROM registry.alauda.cn/library/java:7
+FROM registry.alauda.cn/library/java:8
 #COPY . /usr/src/myapp
 #WORKDIR /usr/src/myapp
 #RUN javac HelloWorld.java
