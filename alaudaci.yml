@@ -1,0 +1,8 @@
+version: "0.1.0"
+pre_ci_boot:
+  image: registry.alauda.cn/library/java
+  tag: "7"
+ci:
+  - javac Helloworld.java
+  - cp ./Helloworld.class $ALAUDACI_DEST_DIR
+  - cp Dockerfile $ALAUDACI_DEST_DIR
