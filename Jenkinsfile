@@ -8,9 +8,8 @@ node {
       }
       stage('Deploy') {
           echo 'Deploying....'
-          sh 'docker build . -t 10.6.0.10:5000/hello-world-jenkins:latest'
           sh 'docker login -p alauda -u alauda 10.6.0.10:5000'
+          sh 'docker build . -t 10.6.0.10:5000/hello-world-jenkins:latest'
           sh 'docker push 10.6.0.10:5000/hello-world-jenkins:latest'
-            
       } 
 }
