@@ -3,6 +3,6 @@ pre_ci_boot:
   image: 10.6.0.10:5000/java
   tag: "8"
 ci:
-  - javac Helloworld.java
+  - javac -encoding utf-8 Helloworld.java
   - cp ./Helloworld.class $ALAUDACI_DEST_DIR
   - cp Dockerfile $ALAUDACI_DEST_DIR
