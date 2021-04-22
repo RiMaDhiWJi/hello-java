@@ -4,13 +4,13 @@ node {
       }
       stage('Build') {
           echo 'Building....'
-          sh 'javac Helloworld.java'
+          sh 'javac -encoding utf-8 Helloworld.java'
       }
       stage('Deploy') {
           echo 'Deploying....'
-          sh 'docker build . -t 10.6.0.10:5000/hello-world:latest'
+          sh 'docker build . -t 10.6.0.10:5000/hello-world-jenkins:latest'
           sh 'docker login -p alauda -u alauda 10.6.0.10:5000'
-          sh 'docker push 10.6.0.10:5000/hello-world:latest'
+          sh 'docker push 10.6.0.10:5000/hello-world-jenkins:latest'
             
       } 
 }
